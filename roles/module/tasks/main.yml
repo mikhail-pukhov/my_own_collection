@@ -1,0 +1,8 @@
+- name: run module
+  mik.my_own_collection.my_own_module:
+    content: '123'
+    path: /mik/home/
+  register: testout
+- name: dump test
+  debug:
+     msg: '{{ testout }}'
